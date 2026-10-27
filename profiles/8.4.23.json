@@ -1,0 +1,22 @@
+{
+  "name": "debian-8.4.23-amd64-modphp",
+  "version": "8.4.23",
+  "arch": "amd64",
+  "sapi": "apache2handler",
+  "image": "php:8.4.23-apache",
+  "symbols": {
+    "zif_system": "0x0000000000462d70",
+    "zval_ptr_dtor": "0x000000000065b9a0"
+  },
+  "layout": {
+    "s_off": "0xf8398"
+  },
+  "requirements": {
+    "workers": 1,
+    "blockers": 149,
+    "aslr": "on",
+    "ini": "php.ini-production"
+  },
+  "measured": true,
+  "source": "family84-prod.csv + rce-8.4.8-10.txt (VPS, 2026-10-27)"
+}

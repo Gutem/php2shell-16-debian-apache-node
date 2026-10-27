@@ -1,0 +1,9 @@
+{
+  "name": "php2shell-8.4-debian-apache",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "exploit": "node run.js"
+  }
+}
